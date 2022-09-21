@@ -1,4 +1,4 @@
-bb# html-css-exam
+# html-css-exam
 
 ## Description
 
