@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css-reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="./css/hamburger.css" />
+    <link rel="stylesheet" type="text/css" href="./css/hamburger2.css" />
+    <link rel="stylesheet" type="text/css" href="./css/top-scroll.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Test</title>
+    <style>
+      .container {
+        background-image: url(./img/wallpaper.jpg);
+        background-size: cover;
+        height: 100vh;
+      }
+      .con,
+      .special-con {
+        cursor: pointer;
+        display: inline-block;
+      }
+
+      .bar {
+        display: block;
+        height: 4px;
+        width: 40px;
+        background: white;
+        margin: 10px auto;
+      }
+
+      .con {
+        width: auto;
+        margin: 0 auto;
+        -webkit-transition: all 0.7s ease;
+        -moz-transition: all 0.7s ease;
+        -ms-transition: all 0.7s ease;
+        -o-transition: all 0.7s ease;
+        transition: all 0.7s ease;
+      }
+
+      .col {
+        display: inline-block;
+        width: 24%;
+        text-align: center;
+        height: auto;
+        position: relative;
+      }
+      .title {
+        margin: 0px auto 0px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top_bar">
+        <div class="logo">
+          <p></p>
+        </div>
+        <nav class="gnb">
+          <ul>
+            <li class="item"><a href="html/aboutMe.html">about me</a></li>
+            <li class="item"><a href="html/project.html">project</a></li>
+            <li class="item">
+              <a href="#" class="openBtn button">
+                <div class="col">
+                  <div class="con">
+                    <div class="bar arrow-top-r"></div>
+                    <div class="bar arrow-middle-r"></div>
+                    <div class="bar arrow-bottom-r"></div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <div class="title">
+          <div class="subtitle"></div>
+        </div>
+      </div>
+      <div id="nav" class="overlay">
+        <a href="#" class="closeBtn" onclick="closeNav()">&times;</a>
+        <div class="overlay__content">
+          <a href="index.html">home</a>
+          <a href="html/aboutMe.html">about</a>
+          <a href="html/project.html">project</a>
+        </div>
+      </div>
+      <script src="./js/hamburger.js"></script>
+    </div>
+  </body>
+</html>

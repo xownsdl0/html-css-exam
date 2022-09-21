@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		  <link rel="stylesheet" type="text/css" href="../css/css-reset.css">
+	  	<link rel="stylesheet" type="text/css" href="../css/top-scroll.css"> 
+	    <link rel="stylesheet" type="text/css" href="../css/hamburger.css">
+      <link rel="stylesheet" type="text/css" href="../css/hamburger2.css"> 
+      <link rel="stylesheet" type="text/css" href="../css/owl.carousel.css">
+      <link rel="stylesheet" type="text/css" href="../css/owl.theme.default.css">
+      <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <style>
+     .container{
+          display: block;
+          height: 100vh;
+            
+        }
+        .content{
+          height: 100px;
+          margin-top: 10px;
+          margin-right: auto;
+          margin-left: auto;
+          width: 800px;
+          
+        }
+        #owl-demo .item img{
+            height: 80vh;
+        }
+         .con,
+    .special-con {
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .bar {
+      display: block;
+      height: 4px;
+      width: 40px;
+      background: black;
+      margin: 10px auto;
+    }
+
+    .con {
+      width: auto;
+      margin: 0 auto;
+      -webkit-transition: all .7s ease;
+      -moz-transition: all .7s ease;
+      -ms-transition: all .7s ease;
+      -o-transition: all .7s ease;
+      transition: all .7s ease;
+    }
+
+    .col {
+      display: inline-block;
+      width: 24%;
+      text-align: center;
+      height: auto;
+      position: relative;
+    }
+
+    </style>
+   
+	</head>
+	<body>
+      <div class="container">
+        <div class="top_bar"> 
+          <nav class="gnb">
+            <ul>
+              <li class="item"><a href="./aboutMe.html">about me</a></li>
+              <li class="item"><a href="./project.html">project</a></li>
+              <li class="item"><a href="#" class="openBtn button">
+                <div class="col">
+                  <div class="con">
+                    <div class="bar arrow-top-r"></div>
+                    <div class="bar arrow-middle-r"></div>
+                    <div class="bar arrow-bottom-r"></div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            </ul>   
+          </nav>    
+        </div>
+
+        <div class="content"> 
+            <div id="owl-demo" class="owl-carousel owl-theme"> 
+              <div class="item">
+                <a href="./gacha.html"><img src="../img/gacha.png"></a>
+              </div>
+              <div class="item"><img src="../img/wow.jpg"></div>
+              <div class="item"><iframe width="800" height="500" src="https://www.youtube.com/embed/YTELOrBg9wo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+            </div>
+        </div>
+
+          <div id="nav" class="overlay">
+              <a href="#" class="closeBtn "onclick="closeNav()">&times;</a>
+            <div class="overlay__content">
+              <a href="../index.html">home</a>
+              <a href="./aboutMe.html">about</a>
+              <a href="./project.html">project</a>
+            </div>
+          </div>
+               
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script src="../js/hamburger.js"></script>
+          <script src="../js/owl.carousel.min.js"></script>
+          <script src="../js/owl.autoplay.js"></script>
+          <script src="../js/owl.navigation.js"></script>
+         <script>
+         $(document).ready(function() {
+            $("#owl-demo").owlCarousel({
+               items:1,
+               singleItem:true,
+                navigation : true, // Show next and prev buttons
+                slideSpeed : 300,
+                paginationSpeed : 400,
+                // "singleItem:true" is a shortcut for:
+                // items : 1, 
+                // itemsDesktop : false,
+                // itemsDesktopSmall : false,
+                // itemsTablet: false,
+                // itemsMobile : false
+            });
+          });
+         </script>
+      </body>
+      </div>
+</html>
